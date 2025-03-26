@@ -964,6 +964,70 @@ Downloaded the xml sample ROI files from Nayma's folder from the durip raid.
 Made a very rough draft of my poster for the graduate showcase. 
 It turns out I cannot download things from the durip raid again so it might be permissions with my laptop. 
 
+\subsection{March 24th, 2025}
+Trying to figure out what I can do while waiting for these errors to be fixed or figured out by me. 
+
+This is the necessary information though. 
+\subsubsection{Durip Raid and other Linux Commands}
+Hannah Gallagher (hg4285), the original UAS data from Hog Island lives in sub-folders on the CIS directory: /dirs/data/uas/uas_data/completed. Within that directory, the specific sub-folders of interest are (doing an ls -lt command at that level in the terminal window):
+drwxrwsr-x 10 tdbpci cis-dirs-uas 1963884331656 Mar 30 2023 20190727_hogisland
+drwxrwsr-x 10 tdbpci cis-dirs-uas 2258374808846 Oct 31 2020 20180714_hogisland
+drwxrwsr-x 10 tdbpci cis-dirs-uas 1330344609067 Oct 31 2020 20180713_hogisland
+drwxrwsr-x 10 tdbpci cis-dirs-uas 1372055708264 Oct 31 2020 20180712_hogisland
+drwxrwsr-x 9 tdbpci cis-dirs-uas 1703268162047 Oct 31 2020 20180711_hogisland
+drwxrwsr-x 10 tdbpci cis-dirs-uas 2110086286748 Sep 16 2019 20190726_hogisland
+drwxrwsr-x 10 tdbpci cis-dirs-uas 5332396760560 Aug 8 2019 20190728_hogisland
+Now, under each folder, there is a lot of information, the most relevant if you are looking for hyperspectral imagery, is to tunnel into the sub-directories for either the nano or swir systems. So, for example, if I change to a directory like 20180713_hogisland, and list the directory contents, I see the following sub-folders: apx15 apx_swir ASD FlightPlan GroundDocumentation HeadwallPolygon Missions READMEcollect.txt SVC
+
+To get the UAS hyperspectral imagery, I then need to got to the Missions sub-folder. If I change to that directory, I am then in the folder:
+
+"/dirs/data/uas/uas_data/completed/20180713_hogisland/Missions"
+
+The contents of that folder are a series of sub-folders indicating the start time of a given UAS sortie:
+1147 1223 1421 1457 1523 1550
+
+If I cd to the folder, for example, 1523, I would see the following sub-folders:
+
+gpsApplanix gpsHypercore gpsNano makoG419 nano tamarisk640 velodyne
+
+These represent the different types of data recorded by each system flown on that sortie (this particular one was for the MX-1, so the only hyperspectral data is from the nano in the "nano" sub-folder
+
+If I now, cd to the nano sub-folder, I would see this:
+
+processed raw
+
+Change directory to the processed folder, and you will see different levels of data product for this particular sortie of the nano hyperspectral imaging system flying on the MX-1
+
+This folder contains the following sub-folders:
+
+dn igm radiance_ortho radiance_raw reflectance_ortho reflectance_raw
+
+
+with obvious meanings
+
+\subsection{March 25th, 2025}
+Radiative Transfer lecture in person. Shadow hiding formulas and when it is a fraction epsilon. 
+
+I have a poster and am going through the edits with Dr. Bachmann. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.6]{March2025/Poster_Before_Edits.png}
+\caption{Poster before the edits}
+\label{fig:Poster before the edits}
+\end{figure}
+
+
+\subsection{March 26th, 2025}
+I want to contact Rob Chancia for my proposal project and then the drone names and they store 128 GB of data. 
+
+I have decided that I should do a summary of the week and then a summary of the month, but let's start with the month. 
+
+\subsection{March 2025 Summary}
+I have been working on the posters and general research progress push to have reasonable results to eventually have novel questions to contribute towards my thesis. 
+
+
+
 
 
 % \[
